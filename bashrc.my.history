@@ -1,0 +1,17 @@
+#This setting will make your work with multiple terminals and CTRL+R a breeze :)
+
+# don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=99999
+HISTFILESIZE=99999
+
+# history does NOT appear automatically in other terminals. But if you want..
+alias hr="history -a; history -n"
+
+# by default append each command to the history log
+export PROMPT_COMMAND="history -a"

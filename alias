@@ -1,0 +1,6 @@
+alias l='ls -lF --color'
+alias ll='ls -lF --color'
+alias la='ls -AF --color'
+alias dff='pydf'
+alias ts='tig status'
+alias g='gvim'

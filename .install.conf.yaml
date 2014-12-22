@@ -1,0 +1,11 @@
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.vimrc: vimrc
+    ~/.gitconfig: gitconfig
+    ~/.alias: alias
+    ~/.bashrc.my.history: bashrc.my.history
+
+- shell:
+  - [git update-submodules, Installing/updating submodules]

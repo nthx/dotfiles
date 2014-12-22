@@ -1,0 +1,70 @@
+[user]
+  name = Tomasz Nazar
+  email = tomasz.nazar@gmail.com
+
+[alias]
+  st = status
+  ba = branch -a
+  co = checkout
+  di = diff --color
+  dis = diff --staged
+  ci = commit
+
+  #stash support
+  sl = stash list
+  ss = stash show
+  sp = stash pop
+  ss0 = stash show stash@{0}
+  ss1 = stash show stash@{1}
+  ss2 = stash show stash@{2}
+  ss3 = stash show stash@{3}
+  ss4 = stash show stash@{4}
+  ss5 = stash show stash@{5}
+
+  prs = pull --rebase --stat
+  rbc = rebase --continue
+  rba = rebase --abort
+  rbs = rebase --skip
+  cpa = cherry-pick --abort
+  cp  = cherry-pick 
+  ma = merge --abort
+  pt = push --tags
+
+  #rebasing a lot? 
+  rbi = rebase -i HEAD~5
+  rbi1 = rebase -i HEAD~1
+  rbi2 = rebase -i HEAD~2
+  rbi3 = rebase -i HEAD~3
+  rbi4 = rebase -i HEAD~4
+  rbi10 = rebase -i HEAD~10
+  rbi15 = rebase -i HEAD~15
+  rbi20 = rebase -i HEAD~20
+  rbi30 = rebase -i HEAD~30
+  rbi40 = rebase -i HEAD~40
+
+  #http://blog.kfish.org/2010/04/git-lola.html
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
+[push]
+  default = current
+
+[core]
+  excludesfile = /home/nthx/.gitignore
+
+[merge]
+  #merging a lot?
+  conflictstyle = diff3
+
+[color]
+  ui = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[core]
+  autocrlf = input
+
+[github]
+  user = nthx
