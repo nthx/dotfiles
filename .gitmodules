@@ -4,3 +4,6 @@
 [submodule "bin/dotbot"]
 	path = bin/dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule ".dotbot"]
+	path = .dotbot
+	url = https://github.com/anishathalye/dotbot
