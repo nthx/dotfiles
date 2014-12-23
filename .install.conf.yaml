@@ -8,4 +8,4 @@
     ~/.bashrc.my.history: bashrc.my.history
 
 - shell:
-  - [git update-submodules, Installing/updating submodules]
+  - [mkdir -p txt/vim-backup, Setup vim backup]
