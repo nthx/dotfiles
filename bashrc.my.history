@@ -10,6 +10,9 @@ shopt -s histappend
 HISTSIZE=99999
 HISTFILESIZE=99999
 
+# ignore common commands
+HISTIGNORE="&:git st:git dis:git log -p:l:cd:ls"
+
 # history does NOT appear automatically in other terminals. But if you want..
 alias hr="history -a; history -n"
 
