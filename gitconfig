@@ -1,7 +1,7 @@
-[user]
-  name = Tomasz Nazar
-  email = tomasz.nazar@gmail.com
-
+#[user]
+#  name = Foo Bar
+#  email = foo@bar
+#
 [alias]
   st = status
   ba = branch -a
