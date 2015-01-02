@@ -2,6 +2,8 @@
 
 # see: https://github.com/anishathalye/dotfiles-local/blob/master/install
 
+set -e
+
 CONFIG=".install.conf.yaml"
 DOTBOT_DIR=".dotbot"
 
