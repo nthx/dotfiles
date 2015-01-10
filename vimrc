@@ -19,7 +19,7 @@
 :set statusline=%<%f%h%m%r%=%l,%c%V\ %P
 :set laststatus=2
 :set backspace=2
-:set iskeyword+=-
+:set iskeyword+=-.
 :command! W write
 :command! Wq wq
 
