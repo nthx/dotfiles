@@ -6,6 +6,8 @@
     ~/.gitconfig: gitconfig
     ~/.alias: alias
     ~/.bashrc.my.history: bashrc.my.history
+    ~/.bashrc.my.adjustments: bashrc.my.adjustments
+    ~/.bashrc: bashrc
 
 - shell:
   - [mkdir -p txt/vim-backup, Setup vim backup]
