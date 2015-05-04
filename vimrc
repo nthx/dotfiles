@@ -1,6 +1,6 @@
 :syntax on 
 :filetype plugin on
-:set nowrap!
+:set wrap
 :set tabstop=2
 :set shiftwidth=2
 :set expandtab
@@ -20,6 +20,7 @@
 :set laststatus=2
 :set backspace=2
 :set iskeyword+=-
+
 :command! W write
 :command! Wq wq
 

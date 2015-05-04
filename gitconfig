@@ -41,6 +41,8 @@
   rbi20 = rebase -i HEAD~20
   rbi30 = rebase -i HEAD~30
   rbi40 = rebase -i HEAD~40
+  rhm = reset --hard origin/master
+  rpo = remote prune origin #cleanup branches
 
   #http://blog.kfish.org/2010/04/git-lola.html
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
