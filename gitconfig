@@ -48,6 +48,12 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
+  contributors = shortlog -sn
+
+  #https://coderwall.com/p/ok-iyg/git-prev-next
+  prev = checkout HEAD^1
+  next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
+
 [push]
   default = current
 
@@ -57,6 +63,7 @@
 [merge]
   #merging a lot?
   conflictstyle = diff3
+  ff = false
 
 [color]
   ui = auto
