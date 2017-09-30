@@ -1,0 +1,19 @@
+ssh-get-ip () {
+  awk '
+      $1 == "Host" {
+          host = $2 ": ";
+          next;
+      }
+      $1 == "Hostname" {
+          $1 = "";
+          sub( /^[[:space:]]*/, "" );
+          printf "%s %s\n", host, $0;
+      }
+  ' ~/.ssh/*_config | while read line; do
+      line_lo={$line,,}
+      if [ -z "${line_lo##*${1,,}*}" ]; then
+        echo $line;
+      fi
+    done
+}
+

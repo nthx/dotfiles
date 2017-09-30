@@ -25,3 +25,10 @@
 :command! Wq wq
 
 :map <F2> :w<CR>
+
+
+" https://github.com/tpope/vim-markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'ruby']
+
+

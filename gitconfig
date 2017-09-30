@@ -36,13 +36,23 @@
   rbi2 = rebase -i HEAD~2
   rbi3 = rebase -i HEAD~3
   rbi4 = rebase -i HEAD~4
+  rbi5 = rebase -i HEAD~5
+  rbi6 = rebase -i HEAD~6
+  rbi7 = rebase -i HEAD~7
   rbi10 = rebase -i HEAD~10
   rbi15 = rebase -i HEAD~15
   rbi20 = rebase -i HEAD~20
   rbi30 = rebase -i HEAD~30
   rbi40 = rebase -i HEAD~40
   rhm = reset --hard origin/master
+  rh70 = reset --hard origin/7.0
+  rh74 = reset --hard origin/7.4
+  rh75 = reset --hard origin/7.5
+  rh76 = reset --hard origin/7.6
   rpo = remote prune origin #cleanup branches
+
+  #git push origin --delete bugfix/tomekn/my-branch #removes remote branch
+  #git push origin :refs/tags/3.99.0-exp #remove remote tag
 
   #http://blog.kfish.org/2010/04/git-lola.html
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
