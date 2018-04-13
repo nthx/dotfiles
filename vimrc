@@ -3,7 +3,6 @@
 :set wrap
 :set tabstop=2
 :set shiftwidth=2
-:set expandtab
 :set softtabstop=2
 :set smarttab
 :set ic
@@ -20,6 +19,7 @@
 :set laststatus=2
 :set backspace=2
 :set iskeyword+=-
+:set expandtab
 
 :command! W write
 :command! Wq wq
