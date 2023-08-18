@@ -1,2 +1,9 @@
 export EDITOR=vi
 export PAGER=less
+export PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin/docker/"
+export PATH="$PATH:/snap/docker/current/bin"
+
+echo "Adjustments complete."

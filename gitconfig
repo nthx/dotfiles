@@ -29,6 +29,7 @@
   cp  = cherry-pick 
   ma = merge --abort
   pt = push --tags
+  pushf = push --force-with-lease
 
   #rebasing a lot? 
   rbi = rebase -i HEAD~5
@@ -44,6 +45,7 @@
   rbi20 = rebase -i HEAD~20
   rbi30 = rebase -i HEAD~30
   rbi40 = rebase -i HEAD~40
+  rbi50 = rebase -i HEAD~50
   rhm = reset --hard origin/master
   rh70 = reset --hard origin/7.0
   rh74 = reset --hard origin/7.4
@@ -73,7 +75,7 @@
 [merge]
   #merging a lot?
   conflictstyle = diff3
-  ff = false
+  ff = true
 
 [color]
   ui = auto
@@ -87,3 +89,7 @@
 
 [github]
   user = nthx
+#[credential]
+#	helper = manager-core
+[credential]
+	helper = store
