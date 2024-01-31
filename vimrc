@@ -11,7 +11,7 @@
 :set autowrite
 :set autoindent
 :set textwidth=0
-:set paste
+":set paste
 :set bk
 :set writebackup
 :set bdir=~/txt/vim-backup
@@ -20,6 +20,8 @@
 :set backspace=2
 :set iskeyword+=-
 :set expandtab
+":set guifontg<F2>=Fantasque\ Sans\ Mono\ 16
+:set guifont=Hack\ 14
 
 :command! W write
 :command! Wq wq
@@ -30,5 +32,4 @@
 " https://github.com/tpope/vim-markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'ruby']
-
 

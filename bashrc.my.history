@@ -7,8 +7,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=99999
-HISTFILESIZE=99999
+HISTSIZE=999999
+HISTFILESIZE=999999
 
 # ignore common commands
 HISTIGNORE="&:git st:git dis:git log -p:l:cd:ls"

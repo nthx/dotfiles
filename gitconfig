@@ -1,7 +1,7 @@
-#[user]
 #  name = Foo Bar
 #  email = foo@bar
 #
+[user]
 [alias]
   st = status
   ba = branch -a
@@ -90,6 +90,6 @@
 [github]
   user = nthx
 #[credential]
-#	helper = manager-core
+# helper = manager-core
 [credential]
-	helper = store
+  helper = store
